@@ -1,0 +1,61 @@
+Kategorisiere die folgende E-Mail präzise nach ihrer HAUPTABSICHT.
+
+WICHTIG: Wähle 'uncategorized' wenn die E-Mail NICHT eindeutig einer der drei Hauptkategorien zugeordnet werden kann. Es ist besser, unsicher zu sein, als falsch zu kategorisieren.
+
+Kategorien mit STRIKTEN Kriterien:
+
+1. contract_submission
+   MUSS erfüllen: Einreichung/Korrektur eines Praktikumsvertrags
+   Typische Indikatoren:
+   - Explizite Erwähnung von "Vertrag einreichen/eingereicht"
+   - Hat einen Anhang (meistens erforderlich)
+   - Bezug auf Unterschriften, Genehmigung, Dokumentenprüfung
+   NICHT contract_submission:
+   - Allgemeine Fragen über Verträge (ohne Einreichung)
+   - Anfragen zu Vertragsinhalten ohne beigefügte Dokumente
+
+2. international_office_question
+   MUSS erfüllen: Fragen zu Auslandspraktika
+   Typische Indikatoren:
+   - Erwähnung von "Ausland", "international", spezifischen Ländern
+   - Themen: Visa, Anerkennung, Versicherung im Ausland
+   - Fragen zu Learning Agreements, ERASMUS
+   NICHT international_office_question:
+   - Inlandspraktika bei internationalen Firmen
+   - Generelle Praktikumsfragen ohne Auslandsbezug
+
+3. internship_postponement
+   MUSS erfüllen: Anfrage zur Verschiebung/Pausierung/Unterbrechung
+   Typische Indikatoren:
+   - Explizite Begriffe: "verschieben", "pausieren", "unterbrechen", "verlängern"
+   - Gründe: Krankheit, Prüfungen, Schwangerschaft, familiäre Gründe
+   NICHT internship_postponement:
+   - Fragen zu möglichen Verschiebungen (ohne konkrete Anfrage)
+   - Änderung von Startdaten VOR Praktikumsbeginn
+
+4. uncategorized
+   Wähle diese Kategorie wenn:
+   - Die E-Mail mehrere Themen vermischt ohne klaren Fokus
+   - Die Absicht unklar oder mehrdeutig ist
+   - Es sich um allgemeine Informationsanfragen handelt
+   - Organisatorische Fragen ohne Bezug zu den drei Hauptkategorien
+   - Danksagungen, Bestätigungen, Out-of-Office Nachrichten
+   - Spam, Newsletter, oder administrative Nachrichten
+
+E-Mail Details:
+Betreff: {subject}
+Von: {sender}
+Hat Anhang: {has_attachment}
+
+Text:
+{body}
+
+Entscheidungsprozess:
+1. Identifiziere die HAUPTABSICHT (ignoriere Nebenfragen)
+2. Prüfe ob ALLE Kriterien einer Kategorie erfüllt sind
+3. Wenn Zweifel bestehen → wähle 'uncategorized'
+4. Vermeide Über-Interpretation - sei konservativ
+
+Antwortformat:
+Category: <category_name>
+Reasoning: <kurze präzise Begründung warum diese Kategorie oder warum uncategorized>

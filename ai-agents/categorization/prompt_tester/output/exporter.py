@@ -171,6 +171,8 @@ class ResultExporter:
                     "expected_category": d.expected_category,
                     "prompt_a_correct": d.prompt_a_correct,
                     "prompt_b_correct": d.prompt_b_correct,
+                    "prompt_a_raw_response": d.prompt_a_raw_response,
+                    "prompt_b_raw_response": d.prompt_b_raw_response,
                 }
                 for d in report.disagreements
             ],

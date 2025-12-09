@@ -94,6 +94,8 @@ class Disagreement(BaseModel):
     expected_category: str = Field(..., description="Ground truth category")
     prompt_a_correct: bool = Field(..., description="Whether prompt A was correct")
     prompt_b_correct: bool = Field(..., description="Whether prompt B was correct")
+    prompt_a_raw_response: Optional[str] = Field(default=None, description="Full LLM response from prompt A")
+    prompt_b_raw_response: Optional[str] = Field(default=None, description="Full LLM response from prompt B")
 
 
 class ComparisonReport(BaseModel):

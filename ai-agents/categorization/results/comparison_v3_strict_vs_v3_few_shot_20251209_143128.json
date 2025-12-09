@@ -1,0 +1,526 @@
+{
+  "test_metadata": {
+    "timestamp": "2025-12-09T14:31:28.118267",
+    "prompts_compared": [
+      "v3_strict",
+      "v3_few_shot"
+    ],
+    "winner": "v3_strict"
+  },
+  "accuracy_comparison": {
+    "v3_strict": 0.59,
+    "v3_few_shot": 0.59
+  },
+  "disagreements": [
+    {
+      "email_id": "email_008",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "contract_submission",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "**Category:** international_office_question\n**Reasoning:** Die E-Mail enthält explizite Erwähnung von \"Semester-Gebühren\" und \"Rückerstattung\", was auf eine Frage zu Auslandspraktika hindeutet. Es wird auch nach Anfragen zur Rückerstattung eines Betrags bei einer Einreihung für ein halbes Semester gefragt, was auf internationales Praktikum hinweist.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Die E-Mail ähnelt nicht explizit einem der Beispiele 1-6, da sie keine konkrete Frage oder Anfrage zur Praktikum-Organisation enthält. Stattdessen ist es eine allgemeine Frage zu einer Semesterrechnung und Rückerstattung. Es gibt keine klare Zuordnung in die Kategorien contract_submission, international_office_question oder internship_postponement. Daher sollte diese E-Mail als uncategorized eingestuft werden."
+    },
+    {
+      "email_id": "email_012",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "internship_postponement",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Basierend auf den angegebenen Kriterien und dem Inhalt der E-Mail würde ich sie folgendermaßen kategorisieren:\n\nCategory: international_office_question\nReasoning: Die E-Mail bezieht sich auf Praktikumsstunden, wobei es um die Berechnung von Pausen geht. Die fragliche Frage bezieht sich jedoch auf den \"Praktikumsvertrag\", der wiederum in Bezug auf ein Auslandspraktikum steht. Der Anhang ist nicht erforderlich, aber die E-Mail enthält einen spezifischen Kontext, der auf eine internationale Praxis hinweist.",
+      "prompt_b_raw_response": "Basierend auf den gegebenen Beispielen würde ich die E-Mail wie folgt kategorisieren:\n\nCategory: internship_postponement\nReasoning: Die E-Mail ähnelt diesem Beispiel, da sie eine explizite Anfrage zur Verschiebung des Praktikumsbeginns mit einem konkreten Grund (Erkrankung) enthält."
+    },
+    {
+      "email_id": "email_013",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "internship_postponement",
+      "expected_category": "contract_submission",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Basierend auf den Kriterien und Indikatoren wurde die E-Mail in folgende Kategorie eingeteilt:\n\n**Category:** contract_submission\n**Reasoning:** Die E-Mail enthält eine explizite Erwähnung von \"Vertrag einreichen/eingereicht\", hat einen Anhang (in diesem Fall PDF-Dateien mit den benötigten Dokumenten) und bezieht sich auf Unterschriften, Genehmigung und Dokumentenprüfung. Diese Merkmale entsprechen den Kriterien für die Kategorie \"contract_submission\".",
+      "prompt_b_raw_response": "Category: internship_postponement\nReasoning: Die E-Mail handelt von der Einreichung eines Praktikumsvertrags und einer Bestätigung durch die Firma, was ein typisches Thema für eine Verschiebung von einem Praktikum ist. Die Erwähnung des Internship Contract and Certificates deutet darauf hin, dass dies ein wichtiger Teil der Vorbereitung für das Praktikum ist."
+    },
+    {
+      "email_id": "email_014",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "contract_submission",
+      "expected_category": "international_office_question",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Ich habe die E-Mail analysiert und folgende Kategorie gefunden:\n\n**Category: international_office_question**\n\n**Reasoning:** Die E-Mail enthält explizite Erwähnung von \"Ausland\", \"international\" und spezifischen Ländern (Barcelona), was auf eine Frage zu Auslandspraktika hinweist. Darüber hinaus werden Themen wie Visa, Anerkennung und Versicherung im Ausland erwähnt, was ebenfalls typisch für solche Anfragen ist. Die E-Mail enthält auch spezifische Fragen über die Anerkennung der Praktikumsbescheinigung und die Eintragung in den Studienplan.\n\nDie Kriterien erfüllen sich:\n\n* Erwähnung von \"Ausland\", \"international\" (MUSS erfüllen)\n* Themen: Visa, Anerkennung, Versicherung im Ausland (MUSS erfüllen)\n* Fragen zu Learning Agreements, ERASMUS sind nicht erwähnt (NICHT international_office_question), aber dies ist nicht relevant für diese Kategorie.\n\nDie E-Mail passt also genau in die Kategorie \"international_office_question\".",
+      "prompt_b_raw_response": "Basierend auf den Beispielen kann ich die folgende Kategorisierung durchführen:\n\n* Category: international_office_question\nReasoning: Die E-Mail fragt nach der Anerkennung von Praktikumserfahrung aus dem Ausland, spezifisch in Spanien, und erwähnt die Erasmus+-Förderung. Dies ähnelt den Beispielen 4 (ERASMUS Praktikum - Versicherung) und 3 (international_office_question), aber es gibt keine klare Zuordnung.\n\n* Category: internship_postponement\nReasoning: Die E-Mail erwähnt eine mögliche Anerkennung von Sprachkursen, die während des Praktikums belegt wurden. Dies ähnelt dem Beispiel 6 (Praktikum pausieren wegen Prüfungsphase), aber es gibt keine explizite Anfrage zur Verschiebung des Praktikums.\n\n* Category: uncategorized\nReasoning: Die E-Mail enthält viele spezifische Informationen über das Praktikum und die Anerkennung, aber es gibt keine klare Zuordnung zu den anderen Kategorien. Es handelt sich um eine allgemeine Frage nach der Zuständigkeit für die Anerkennung und hilft bei der Eintragung in den Studienplan.\n\nCategory: international_office_question\nReasoning: Die E-Mail enthält mehrere Fragen zu den Anerkennungsprozessen, wie z.B. \"Wer kann mir bei der Eintragung in meinen Studienplan helfen?\" und \"Würden Sprachkurse, die ich dort belegte, anerkannt?\". Dies ähnelt dem Beispiel 4 (ERASMUS Praktikum - Versicherung), aber es gibt keine klare Zuordnung.\n\n* Category: contract_submission\nReasoning: Die E-Mail enthält keinen expliziten Vertragseinreichung. Es wird jedoch erwähnt, dass die Praktikumsbescheinigung auf Spanisch ausgestellt wurde und der Sprachkurs anerkannt werden könnte. Dies ähnelt dem Beispiel 2 (Korrektur Praktikumsvertrag), aber es gibt keinen korrigierten Vertrag.\n\n* Category: uncategorized\nReasoning: Die E-Mail enthält eine Reihe von Fragen, die nicht direkt mit den anderen Kategorien zusammenhängen. Es handelt sich um allgemeine Informationen über das Praktikum und die Anerkennung, aber keine klare Zuordnung zu den anderen Kategorien.\n\nCategory: uncategorized\nReasoning: Die E-Mail enthält eine Reihe von Fragen, die nicht direkt mit den anderen Kategorien zusammenhängen. Es handelt sich um allgemeine Informationen über das Praktikum und die Anerkennung, aber keine klare Zuordnung zu den anderen Kategorien.\n\n* Category: uncategorized\nReasoning: Die E-Mail enthält eine Reihe von Fragen, die nicht direkt mit den anderen Kategorien zusammenhängen. Es handelt sich um allgemeine Informationen über das Praktikum und die Anerkennung, aber keine klare Zuordnung zu den anderen Kategorien.\n\nCategory: international_office_question\nReasoning: Die E-Mail enthält mehrere Fragen zu den Anerkennungsprozessen und hilft bei der Eintragung in den Studienplan. Dies ähnelt dem Beispiel 4 (ERASMUS Praktikum - Versicherung), aber es gibt keine klare Zuordnung.\n\n* Category: uncategorized\nReasoning: Die E-Mail enthält eine Reihe von Fragen, die nicht direkt mit den anderen Kategorien zusammenhängen. Es handelt sich um allgemeine Informationen über das Praktikum und die Anerkennung, aber keine klare Zuordnung zu den anderen Kategorien.\n\nCategory: uncategorized\nReasoning: Die E-Mail enthält eine Reihe von Fragen, die nicht direkt mit den anderen Kategorien zusammenhängen. Es handelt sich um allgemeine Informationen über das Praktikum und die Anerkennung, aber keine klare Zuordnung zu den anderen Kategorien.\n\n* Category: uncategorized\nReasoning: Die E-Mail enthält eine Reihe von Fragen, die nicht direkt mit den anderen Kategorien zusammenhängen. Es handelt sich um allgemeine Informationen über das Praktikum und die Anerkennung, aber keine klare Zuordnung zu den anderen Kategorien.\n\nCategory: international_office_question\nReasoning: Die E-Mail enthält mehrere Fragen zu den Anerkennungsprozessen und hilft bei der Eintragung in den Studienplan. Dies ähnelt dem Beispiel 4 (ERASMUS Praktikum - Versicherung), aber es gibt keine klare Zuordnung.\n\n* Category: uncategorized\nReasoning: Die E-Mail enthält eine Reihe von Fragen, die nicht direkt mit den anderen Kategorien zusammenhängen. Es handelt sich um allgemeine Informationen über das Praktikum und die Anerkennung, aber keine klare Zuordnung zu den anderen Kategorien.\n\nCategory: uncategorized\nReasoning: Die E-Mail enthält eine Reihe von Fragen, die nicht direkt mit den anderen Kategorien zusammenhängen. Es handelt sich um allgemeine Informationen über das Praktikum und die Anerkennung, aber keine klare Zuordnung zu den anderen Kategorien.\n\n* Category: uncategorized\nReasoning: Die E-Mail enthält eine Reihe von Fragen, die nicht direkt mit den anderen Kategorien zusammenhängen. Es handelt sich um allgemeine Informationen über das Praktikum und die Anerkennung, aber keine klare Zuordnung zu den anderen Kategorien.\n\nCategory: international_office_question\nReasoning: Die E-Mail enthält mehrere Fragen zu den Anerkennungsprozessen und hilft bei der Eintragung in den Studienplan. Dies ähnelt dem Beispiel 4 (ERASMUS Praktikum - Versicherung), aber es gibt keine klare Zuordnung.\n\n* Category: uncategorized\nReasoning: Die E-Mail enthält eine Reihe von Fragen, die nicht direkt mit den anderen Kategorien zusammenhängen. Es handelt sich um allgemeine Informationen über das Praktikum und die Anerkennung, aber keine klare Zuordnung zu den anderen Kategorien.\n\nCategory: international_office_question\nReasoning: Die E-Mail enthält mehrere Fragen zu den Anerkennungsprozessen und hilft bei der Eintragung in den Studienplan. Dies ähnelt dem Beispiel 4 (ERASMUS Praktikum - Versicherung), aber es gibt keine klare Zuordnung.\n\n* Category: uncategorized\nReasoning: Die E-Mail enthält eine Reihe von Fragen, die nicht direkt mit den anderen Kategorien zusammenhängen. Es handelt sich um allgemeine Informationen über das Praktikum und die Anerkennung, aber keine klare Zuordnung zu den anderen Kategorien.\n\nCategory: international_office_question\nReasoning: Die E-Mail enthält mehrere Fragen zu den Anerkennungsprozessen und hilft bei der Eintragung in den Studienplan. Dies ähnelt dem Beispiel 4 (ERASMUS Praktikum - Versicherung), aber es gibt keine klare Zuordnung.\n\n* Category: uncategorized\nReasoning: Die E-Mail enthält eine Reihe von Fragen, die nicht direkt mit den anderen Kategorien zusammenhängen. Es handelt sich um allgemeine Informationen über das Praktikum und die Anerkennung, aber keine klare Zuordnung zu den anderen Kategorien.\n\nCategory: international_office_question\nReasoning: Die E-Mail enthält mehrere Fragen zu den Anerkann"
+    },
+    {
+      "email_id": "email_015",
+      "prompt_a_prediction": "uncategorized",
+      "prompt_b_prediction": "contract_submission",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "**Kategorisierung der E-Mail**\n\nDie E-Mail passt nicht genau in eine der drei vorgegebenen Kategorien. Es gibt mehrere Themen vermischt, ohne klaren Fokus.\n\n**REASONING:**\nDie E-Mail enthält Fragen zu Praktikumsbescheinigungen, möglichen Anrechnungsfragen und der Möglichkeit eines zusätzlichen Praktikums. Diese Themen sind jedoch nicht genau an eine der drei vorgegebenen Kategorien angekettet.\n\n**Kategorie:** uncategorized\n\n**Begründung:** Die E-Mail enthält mehrere Themen, die nicht genau zu einer einzelnen Kategorie passen. Es gibt keine klare oder eindeutige Hauptabsicht, und es ist daher schwierig, die E-Mail einer dieser drei Kategorien zuzuordnen.",
+      "prompt_b_raw_response": "Ich würde die E-Mail wie folgt kategorisieren:\n\nCategory: uncategorized\nReasoning: Die E-Mail enthält mehrere spezifische Fragen zu Praktikumsanrechenung, -verlängerung und -erweiterung. Es gibt jedoch keine explizite Anfrage zur Einreichung eines Vertrags oder keine spezifischen Fragen zu einem bestimmten Thema wie z.B. Sprechstunden oder Versicherungen. Die E-Mail enthält auch keine allgemeine organisatorische Frage, sondern vielmehr spezifische Praktikumsanfragen. Daher passt sie nicht in die Kategorien contract_submission, international_office_question oder internship_postponement, und es gibt keine klare Zuordnung in diese Kategorien."
+    },
+    {
+      "email_id": "email_018",
+      "prompt_a_prediction": "internship_postponement",
+      "prompt_b_prediction": "contract_submission",
+      "expected_category": "internship_postponement",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "**Kategorisierung der E-Mail**\n\nDie E-Mail passt nicht eindeutig einer der drei Hauptkategorien. Der Text enthält Themen aus mehreren Kategorien, aber die Hauptsache ist die Anfrage zur Verschiebung eines Praktikums.\n\n**Begründung:**\nDie E-Mail enthält explizite Erwähnung von \"Praktikum verschieben\" und \"neue Genehmigung benötigt\", was auf eine Änderung der Praktikumsdaten hinweist. Der Text erwähnt auch spezifische Gründe für die Verschiebung (gesundheitliche Gründe) und fragt nach dem Verfahren und den erforderlichen Formularen. Dies entspricht den Kriterien für die Kategorie \"internship_postponement\".\n\n**Kategorisierung:**\nCategory: internship_postponement\nReasoning: Die E-Mail enthält explizite Erwähnung von \"Praktikum verschieben\" und \"neue Genehmigung benötigt\", was auf eine Änderung der Praktikumsdaten hinweist. Der Text erwähnt auch spezifische Gründe für die Verschiebung (gesundheitliche Gründe) und fragt nach dem Verfahren und den erforderlichen Formularen, was die Kriterien für die Kategorie \"internship_postponement\" erfüllt.",
+      "prompt_b_raw_response": "Category: internship_postponement\nReasoning: Die E-Mail handelt von der Verschiebung des Praktikums, ist jedoch nicht explizit an einen bestimmten Termin oder eine Vertragsänderung geknüpft. Es wird jedoch nach Formularen und Vorgaben fragt, was auf den ersten Blick etwas mit einer Änderung im Praktikum zu tun hat. Der Schlüssel liegt darin, dass es um die Verschiebung geht, aber keine spezifischen Details zu den Gründen oder den Folgen der Verschiebung gegeben sind.\n\nDie E-Mail ähnelt am nächsten Beispiels 5: internship_postponement, da sie explizit eine Verschiebung des Praktikums verlangt. Es gibt jedoch auch Elemente, die auf 'uncategorized' hindeuten könnten, wie zum Beispiel das Nachfragen nach Formularen und Vorgaben, was nicht direkt mit einer Postponierung zu tun ist.\n\nTrotzdem ist diese E-Mail am ehesten in die Kategorie internship_postponement einzuteilen. Die E-Mail konzentriert sich auf die Verschiebung des Praktikums und die Notwendigkeit eines neuen Praktikumsvertrages, was es von anderen Nachrichten abhebt, die lediglich nach Informationen oder Formularen fragen, ohne explizit eine Änderung im Praktikum zu verlangen.\n\nDie E-Mail enthält keine klare Zuordnung in den übrigen Kategorien (contract_submission, international_office_question, uncategorized), und daher wird diese Entscheidung auf Basis der oben genannten Beispiele getroffen."
+    },
+    {
+      "email_id": "email_019",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "Ich kann dir dabei helfen, die E-Mail zu kategorisieren.\n\nDie E-Mail passt nicht in eine der drei Hauptkategorien:\n\n- contract_submission (da es keine Erwähnung von \"Vertrag einreichen\" gibt)\n- international_office_question (da es keine Fragen zu Auslandspraktika enthält)\n- internship_postponement (da es keine explizite Anfrage zur Verschiebung oder Unterbrechung des Praktikums ist)\n\nEs handelt sich daher um eine Nachricht, die mehrere Themen vermisst und ohne klaren Fokus ist. Es gibt auch keine typischen Indikatoren für eine dieser Kategorien.\n\nDie E-Mail passt nicht in die Kategorie \"uncategorized\", da es keine allgemeinen Informationsanfragen oder organisatorische Fragen gibt.\n\nDie Antwort lautet daher:\n\nCategory: uncategorized\nReasoning: Die E-Mail enthält mehrere Themen ohne klaren Fokus und keine typischen Indikatoren für eine der drei Hauptkategorien.",
+      "prompt_b_raw_response": "Basierend auf den obigen Beispielen würde ich die folgende Kategorisierung für die E-Mail vorschlagen:\n\n Category: uncategorized\nReasoning: Die E-Mail hat keinen klaren Inhalt, keine spezifische Frage oder Anfrage und gibt keine Hinweise darauf, dass es sich um eine bestimmte Art von E-Mail handelt (kein Vertragseinzug, internationales Praktikum usw.). Der Text \"Test\" ist sehr kurz und hat keinen Kontext. Daher passt die E-Mail nicht in die anderen Kategorien und sollte als uncategorized eingestuft werden.\n\nEs gibt jedoch einen Hinweis darauf, dass es sich um eine Spam-E-Mail handelt (Von: spam@example.com), was typischerweise zu einer 'uncategorized' oder 'Spam'-Kategorie führt."
+    },
+    {
+      "email_id": "email_021",
+      "prompt_a_prediction": "internship_postponement",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "internship_postponement",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Category: internship_postponement\nReasoning: Die E-Mail enthält eine explizite Anfrage zur Verschiebung des Praktikumstermines aufgrund persönlicher Gründe (Krankheit und familiäre Verpflichtungen), was alle Kriterien der Kategorie \"internship_postponement\" erfüllt.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Diese E-Mail passt nicht in eine der anderen Kategorien, da sie keine explizite Anfrage oder Frage (nach einem Vertrag, Praktikum, etc.) enthält. Sie ist auch kein einfaches \"Dankeschön\" oder eine allgemeine Frage ohne spezifisches Thema, sondern eher ein kurzfristiger Hinweis auf einen Terminproblemm mit einem flexiblen Term."
+    },
+    {
+      "email_id": "email_022",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "contract_submission",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "**Kategorisierung der E-Mail**\n\nNach der Analyse der E-Mail kann sie in die Kategorie **uncategorized** eingeordnet werden.\n\n**Begründung:**\nDie E-Mail enthält mehrere Themen und Fragen, wie z.B. das Einreichen von Unterlagen für den Genehmigungsprozess, die Notwendigkeit einer Versicherungsbestätigung und die Frage nach weiteren Formularen, die die Firma ausfüllen muss. Allerdings gibt es keine klare oder eindeutige Anfrage zu einem bestimmten Thema. Die E-Mail enthält auch Fragen, die bereits im \"contract_submission\"-Kategorienfall fallen würden, wie z.B. die Frage nach der Einreichung von Unterlagen.\n\n**Details:**\n\n* Die E-Mail enthält mehrere Themen und Fragen.\n* Es gibt keine klare oder eindeutige Anfrage zu einem bestimmten Thema.\n* Die E-Mail enthält Fragen, die bereits im \"contract_submission\"-Kategorienfall fallen würden.\n* Keine explizite Erwähnung von \"Vertrag einreichen/eingereicht\".\n* Kein Anhang.\n* Keine klare oder eindeutige Frage nach einer Checkliste.\n\n**Zusammenfassung:**\nDie E-Mail enthält mehrere Themen und Fragen, die jedoch nicht klar und eindeutig zu einem bestimmten Thema zusammengefasst werden können. Es ist daher besser, sie in die Kategorie \"uncategorized\" einzuteilen, um sicherzustellen, dass keine falsche Kategorisierung erfolgt.",
+      "prompt_b_raw_response": "Basierend auf den Beispielen könnte ich die E-Mail wie folgt kategorisieren:\n\nCategory: uncategorized\nReasoning: Die E-Mail enthält eine allgemeine Frage, die keine klare Zuordnung in einer der anderen Kategorien findet. Sie beinhaltet mehrere spezifische Anliegen (Genehmigungsprozess, Dokumentenliste), aber es fehlt an expliziter Begründung oder Verbindung zu einem bestimmten Thema.\n\nDie E-Mail ist ähnlich wie Beispiels 9 (\"Frage zum Praktikumsvertrag\"), aber es fehlt die klare Frage \"Welche Informationen müssen im Praktikumsvertrag stehen?\". Anstatt eine Liste von Dokumenten zu nennen, fragt Stefanie Krüger nach einer Checkliste. Dies macht die E-Mail ziemlich unbestimmt und schwierig zu kategorisieren."
+    },
+    {
+      "email_id": "email_023",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "**Kategorisierung der E-Mail**\n\nBasierend auf den angegebenen Kriterien und dem Inhalt der E-Mail kann die E-Mail in die folgende Kategorie eingeteilt werden:\n\n**Category: international_office_question**\n**Reasoning:** Die E-Mail enthält explizite Erwähnung von \"Ausland\", \"international\" und spezifischen Ländern (USA, Hamburg), was auf Fragen zu Auslandspraktika hinweist. Darüber hinaus sind Themen wie Visa, Anerkennung und Versicherung im Ausland relevant, was ebenfalls auf ein internationaler Praktikum-Verbindung hinweist.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Diese E-Mail ähnelt den Beispielen 7-10 für \"uncategorized\" da sie eine allgemeine Frage ohne spezifisches Thema oder Anhang enthält. Es gibt keine klare Zuordnung zu einem bestimmten Praktikumstyp, wie Auslandspraktikum oder internationalem Praktikum, und die E-Mail konzentriert sich auf die Klarstellung eines Punktes, ohne spezifische Details."
+    },
+    {
+      "email_id": "email_024",
+      "prompt_a_prediction": "internship_postponement",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "Category: internship_postponement\nReasoning: Die E-Mail enthält eine Anfrage zur Verschiebung eines Praktikums, da Lisa Vogel explizit um eine funktionierende Version des Formulars bittet und auch das Problem auf der Webseite beheben möchte.",
+      "prompt_b_raw_response": "**Kategorie:** uncategorized\n**Grund:** Die E-Mail ist eine allgemeine Frage zur Funktion eines Formulars, ohne dass ein spezifisches Thema oder Anliegen genannt wird. Sie erfordert keine spezifische Antwort oder Hilfe und beinhaltet kein konkretes Thema wie die Einreichung eines Vertrags oder eine Verschiebung des Praktikumsbeginns.\n\n**Grund für die Ausscheidung:** Die E-Mail entspricht nicht den Beispielen für internationale Fragen (BEISPIEL 3) oder internationale Fragen zu Versicherungen und Erasmus (BEISPIEL 4), da es sich um keine Auslandspraktikum-Frage handelt. Es gibt auch keinen Grund, die E-Mail in die Kategorie \"Internship Postponement\" einzuteilen, da es keine Anfrage zur Verschiebung des Praktikumsbeginns gibt. Die E-Mail enthält auch nicht ein explizites Verlangen nach einer Danksagung oder einer allgemeinen Frage (BEISPIEL 7-8). Schließlich entspricht die E-Mail nicht den Beispielen für internationale Fragen, da es sich um eine lokale Anfrage handelt."
+    },
+    {
+      "email_id": "email_026",
+      "prompt_a_prediction": "internship_postponement",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "international_office_question",
+      "prompt_a_correct": false,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Basierend auf den Kriterien und der E-Mail-Detail wurden folgende Kategorisierungen vorgenommen:\n\n1. **uncategorized**\n   Reasoning: Die E-Mail enthält mehrere Themen, wie \"Praktikum im Ausland\" und \"Praktikumsplan\", ohne klaren Fokus oder unambiguousen Absicht.\n\n2. **internship_postponement** \n   Während die E-Mail nicht explizit um eine Verschiebung eines Praktikums bittet, gibt es deutliche Hinweise darauf, dass Nina über die Vorteile und möglichen Probleme einer Auslandspraktik mitreden will. Dieser Aspekt ist entscheidend, um sie zu einem Interesse an der Verschiebung zu bringen oder nicht. Die Begriffe \"eventuell im Ausland\" und das generelle Fragen nach dem Praxisplan, wie \"was müsste ich dann beachten?\", lassen auf eine tiefere Untersuchung von Praxisaspekten (insbesondere ausländischer) schließen.\n\nDie E-Mail unterscheidet sich also nicht klar von der Kategorie **internship_postponement**, da sie eher an Informationen und Bewertungen zur Auslandspraktik als unmittelbar daran interessiert erscheint.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Diese E-Mail ähnelt den Beispielen 7-10 für \"uncategorized\", da sie eine allgemeine organisatorische Frage ohne spezifisches Thema oder Vertragseinreichung enthält. Die Frage nach dem Praktikum im Ausland ist zwar relevant, aber es wird nicht explizit verlangt, dass Nina den Vertrag einreicht oder die Anerkennung besprochen werden muss."
+    },
+    {
+      "email_id": "email_027",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "Category: international_office_question\nReasoning: Die E-Mail enthält eine persönliche Bitte von Sarah Lehmann an Frau Friedrich, die auf einem Praktikumsvertrag beruht. Es gibt keine Hinweise darauf, dass es sich um ein Auslandspraktikum handelt oder dass Fragen zu Learning Agreements oder Visa im Ausland gestellt werden.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Die E-Mail ist eine Danksagung ohne spezifisches Thema oder Anliegen, was sie von den anderen Kategorien unterscheidet. Sie enthält keine explizite Frage, Einreichung eines Vertrags oder Verschiebung eines Praktikums, sondern lediglich eine allgemeine Anerkennung der Unterstützung durch die Person."
+    },
+    {
+      "email_id": "email_028",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "internship_postponement",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Category: contract_submission\n Reasoning: Die E-Mail konzentriert sich auf die Verlängerung des laufenden Praktikums und fragt nach der Notwendigkeit eines neuen Antrags oder einer Ergänzung zum bestehenden Vertrag. Es gibt keine explizite Erwähnung von \"Vertrag einreichen\" oder einen beigefügten Anhang, aber die Frage ist eng mit dem Thema \"Vertrag\" verbunden und es geht um die Verlängerung eines Praktikumsvertrags.",
+      "prompt_b_raw_response": "Category: internship_postponement\nReasoning: Die E-Mail ist eine explizite Anfrage zur Verschiebung eines laufenden Praktikums mit einem konkreten Grund (Projekt-Abgeschlossenheit), was diesem Beispiel ähnelt."
+    },
+    {
+      "email_id": "email_029",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "internship_postponement",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Category: international_office_question\nReasoning: Die E-Mail bezieht sich auf Praktikumsplätze im Bereich Jugendarbeit, was mit dem internationalen Büro der HAW zusammenhängt. Es wird auch eine \"Weitervermittlung\" gefordert, was typisch für Fragen zu Auslandspraktika ist.",
+      "prompt_b_raw_response": "Category: internship_postponement\nReasoning: Die E-Mail ist eine Anfrage zur Verschiebung eines Praktikums, obwohl es keine Erkrankung oder andere dringende Gründe gibt. Es ähnelt mehr der Beispiele 7-10, die allgemeine organisatorische Fragen darstellen, aber es fehlt auch hier an einer klaren Zuordnung zu den anderen Kategorien. Daher wird diese E-Mail als \"uncategorized\" klassifiziert."
+    },
+    {
+      "email_id": "email_030",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "international_office_question",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "**Kategorisierung der E-Mail**\n\n**Category:** international_office_question\n**Reasoning:** Die E-Mail bezieht sich auf ein Praktikum in einem Ausland (Dänemark) und enthält Fragen zu Visa, Anerkennung und Versicherungen im Ausland. Es gibt keine Erwähnung von Inlandspraktika oder generellen Praktikumsfragen ohne Auslandsbezug.\n\n**Details:**\n\n- Die E-Mail bezieht sich auf ein Praktikum in einem Ausland (Dänemark).\n- Es enthält Fragen zu Visa, Anerkennung und Versicherungen im Ausland.\n- Keine Erwähnung von Inlandspraktika oder generellen Praktikumsfragen ohne Auslandsbezug.\n\n**Kategorisierungsbegründung:**\nDie E-Mail bezieht sich auf ein Praktikum in einem Ausland, was sie in die Kategorie international_office_question bringt.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Die E-Mail enthält keine explizite Frage zu einem spezifischen Thema, wie es in den Beispielen für internationale Office-Fragen oder Praktikumsanfragen der Fall ist. Stattdessen handelt es sich um eine allgemeine Anfrage über das Auslandsthema und die Details eines Praktikums, ohne ein klares Anliegen zu haben, wie es in den Beispielen für internationale Office-Fragen oder Praktikumsanfragen der Fall ist."
+    },
+    {
+      "email_id": "email_036",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "internship_postponement",
+      "expected_category": "contract_submission",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Category: contract_submission\nReasoning: Die E-Mail handelt über eine Korrektur eines Praktikumsvertrags, der bereits unterschrieben wurde. Es wird um die Möglichkeit fragen, ob der Vertrag korrigiert werden soll oder ob es direkt möglich ist. Der Anhang enthält den korrigierten Vertrag.",
+      "prompt_b_raw_response": "Ich werde die E-Mail kategorisieren.\n\n**Category:** internship_postponement\n**Reasoning:** Die E-Mail handelt von einer Anfrage zur Änderung des Praktikumsbeginns und der Grund für die Verschiebung ist eine Erkrankung. Dies ähnelt Beispielen 5 und 6, die beide explizite Anfragen zur Pausierung oder Verschiebung des Praktikums mit konkreten Gründen enthalten.\n\n**Warum:** Die E-Mail entspricht diesem Beispiel am nächsten, da sie eine direkte Anfrage zur Änderung des Praktikumsbeginns und einen konkreten Grund für die Verschiebung enthält."
+    },
+    {
+      "email_id": "email_038",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "Category: international_office_question\nReasoning: Die E-Mail enthält explizite Erwähnung von \"Ausland\", \"international\" und spezifischen Ländern (keine genaue Angabe), was darauf hindeutet, dass es sich um eine Frage zu Auslandspraktika handelt.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Die E-Mail ist eine allgemeine Frage ohne spezifisches Thema, wie das Vorhandensein von Formularen für ein Praktikum. Sie enthält keine explizite Anfrage zur Einreichung eines Vertrags oder zur Verschiebung des Praktikumsbeginns, sondern vielmehr eine allgemeine Nachfrage nach Informationen."
+    },
+    {
+      "email_id": "email_039",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "Category: international_office_question\nReasoning: Die E-Mail enthält explizite Erwähnung von \"Ausland\" und \"international\", was auf eine Frage zu Auslandspraktika hinweist. Darüber hinaus werden spezifische Themen wie Visa, Anerkennung und Versicherung im Ausland erwähnt, die typisch für internationale Praktikumsfragen sind. Es gibt keine Hinweise darauf, dass es sich um Inlandspraktika bei internationalen Firmen oder allgemeine Praktikumsfragen ohne Auslandsbezug handelt.",
+      "prompt_b_raw_response": "Basierend auf den angegebenen Beispielen würde ich die E-Mail wie folgt kategorisieren:\n\nCategory: uncategorized\nReasoning: Die E-Mail ist eine allgemeine Anfrage, in der David Richter um Hilfe bei der Suche nach einem Praktikumsplatz und Unterstützung von dem Praktikantenamt bittet. Es gibt keine spezifischen Fragen zu Verträgen, internationalen Praktika oder Pausierungen, die eine klare Zuordnung zu anderen Kategorien ermöglichen würde."
+    },
+    {
+      "email_id": "email_040",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "internship_postponement",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Die E-Mail wurde in die folgende Kategorie eingekategorisiert:\n\n**Category: international_office_question**\n\n**Reasoning:** Die E-Mail enthält explizite Erwähnung von \"Ausland\" und spezifischen Ländern (Schweiz), was auf eine Frage zu Auslandspraktika hindeutet. Darüber hinaus werden Themen wie Visa, Anerkennung und Versicherung im Ausland erwähnt. Diese Indikatoren weisen auf einen Antrag bezüglich eines Auslandspraktikums hin.",
+      "prompt_b_raw_response": "Category: internship_postponement\nReasoning: Diese E-Mail ähnelt Beispielen 5 und 6, da sie explizite Anfragen zur Verschiebung eines Praktikums mit einem konkreten Grund enthält. Die E-Mail handelt von einer Verschiebung des Beginns des Praktikums, die auf eine Erkrankung zurückzuführen ist, was zu einer Änderung des Termins führt."
+    },
+    {
+      "email_id": "email_041",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "internship_postponement",
+      "expected_category": "contract_submission",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "**Kategorisierung der E-Mail**\n\n**Ansicht:** contract_submission\n**Gebunden auf die Kriterien:**\n- Die E-Mail bezieht sich explizit auf den Einreichungsprozess eines Praktikumsvertrags (\"Praktikumsvertrag mit der Firma MediaTech Solutions GmbH bereits letzte Woche eingereicht\").\n- Es gibt keine Anfrage zu anderen Aspekten des Vertrags, wie z.B. dem Inhalt oder den Vereinbarungen.\n- Die E-Mail ist jedoch mehrdeutig und fragt nach einer Korrektur des fehlenden Unterzeichners.\n\n**Begründung:** Die E-Mail kann zwar einige Kriterien erfüllen, aber die explizite Frage nach der Unterschrift des Betreuers legt nahe, dass es sich eher um einen contract_submission handelt als um eine andere Kategorie. Die Mehrdeutigkeit der E-Mail macht es jedoch schwierig, sie eindeutig in eine Kategorie einzuteilen.\n\n**Empfehlung:** Da die E-Mail einige Merkmale von contract_submission aufweist, aber auch mehrdeutige Aspekte hat, würde ich vorschlagen, diese E-Mail in die Kategorie uncategorized zu platzieren. Die genaue Kategorisierung ist hier nicht eindeutig möglich.\n\n**Kategorie:** uncategorized\n**Begründung:** Die E-Mail enthält mehrere Themen und Aspekte, die nicht klar zusammengeführt sind. Die explizite Frage nach der Unterschrift des Betreuers legt nahe, dass es sich eher um eine Anfrage im Hinblick auf das Vertragsmanagement handelt, aber die Mehrdeutigkeit der E-Mail macht es schwierig, sie eindeutig in eine Kategorie einzuteilen.",
+      "prompt_b_raw_response": "Category: internship_postponement\nReasoning: Die E-Mail ist eine Anfrage zur Verschiebung des Praktikumsbeginns mit einer konkreten Begründung (Erkrankung). Sie ähnelt den Beispielen 5 und 6, aber ohne die spezifische Begründung \"wichtige Prüfungen\". Daher wird es als Postponement der Praktikumsvorbereitungen gewertet."
+    },
+    {
+      "email_id": "email_043",
+      "prompt_a_prediction": "uncategorized",
+      "prompt_b_prediction": "contract_submission",
+      "expected_category": "internship_postponement",
+      "prompt_a_correct": false,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "**Kategorisierung der E-Mail**\n\nDie E-Mail \"Betreff: Praktikumsbeginn verschieben\" passt nicht eindeutig einer der drei Hauptkategorien.\n\n**Gründe für die Kategorie \"uncategorized\"**\n\n* Die E-Mail enthält mehrere Themen, wie Praktikumsbeginn, Verschiebung und Gesundheitsgründe.\n* Die Absicht ist klar, nämlich den Starttermin des Praktikums zu verschieben, aber es gibt auch eine erwähnte Zustimmung der Firma WindEnergy Nord.\n* Es fehlt eindeutige Indikatoren für eine Kategorie (z.B. explizite Erwähnung von \"Vertrag einreichen\" oder \"Ausland\").\n\n**Kategorisierung der E-Mail**\n\nCategory: uncategorized\nReasoning: Die E-Mail enthält mehrere Themen und die Absicht ist klar, aber es fehlen eindeutige Indikatoren für eine Kategorie.",
+      "prompt_b_raw_response": "Ich werde die Kategorisierung der E-Mail anhand der obigen Beispiele durchführen.\n\nDie E-Mail enthält eine Anfrage zur Verschiebung des Praktikumsbeginns aufgrund gesundheitlicher Gründe. Dies ähnelt nicht explizit einem der ersten Beispiele (contract_submission oder international_office_question), sondern es gibt auch keine Hinweise auf eine Frage zu einem bestimmten Thema oder auf eine allgemeine Anfrage.\n\nDie E-Mail enthält jedoch einige Merkmale, die sie von den ersten Beispielen unterscheiden:\n\n* Sie ist eine explizite Anfrage zur Verschiebung des Praktikumsbeginns.\n* Der Grund für die Verschiebung ist gesundheitlich.\n* Die Firma hat bereits zugestimmt.\n\nDa es keine Hinweise auf ein bestimmtes Thema oder auf eine allgemeine organisatorische Frage gibt, bin ich nicht sicher, ob die E-Mail in die Kategorien \"contract_submission\", \"international_office_question\" oder \"internship_postponement\" passt. Die einzige Möglichkeit wäre, sie unter der Kategorie \"uncategorized\" zu platzieren.\n\nLeider gibt es keine Beispielsammlung für diese spezifische Kategorie, aber ich kann die E-Mail basierend auf den obigen Regeln kategorisieren:\n\nCategory: uncategorized\nReasoning: Die E-Mail ist eine explizite Anfrage zur Verschiebung des Praktikumsbeginns, aber sie enthält keine Hinweise auf ein bestimmtes Thema oder auf eine allgemeine organisatorische Frage."
+    },
+    {
+      "email_id": "email_045",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "Die E-Mail passt nicht eindeutig zu einer der drei Hauptkategorien.\n\nGründe:\n\n* Es gibt keine explizite Erwähnung von \"Vertrag einreichen/eingereicht\" oder anderen relevanten Begriffen, die typisch für die Kategorie contract_submission sind.\n* Es gibt keine Anfrage nach Auslandspraktika oder andere international-bezogene Fragen, die typisch für die Kategorie international_office_question sind.\n* Es gibt auch keine explizite Begriffe wie \"verschieben\", \"pausieren\" oder \"unterbrechen\", die typisch für die Kategorie internship_postponement sind.\n* Die E-Mail enthält keine klaren Gründe für eine Verschiebung des Praktikums und keinen konkreten Antrag, der zu einer der anderen beiden Kategorien passt.\n\nDaher entscheidet sich für die Kategorie \"uncategorized\".",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Beispiele 7-10 \"uncategorized\" ähneln sich mit dieser E-Mail, da sie keine spezifischen Anfragen, Fragen oder Anliegen enthalten. Die E-Mail besteht lediglich aus einer Danksagung ohne konkrete Informationen oder Anregungen."
+    },
+    {
+      "email_id": "email_050",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "Category: international_office_question\nReasoning: Die E-Mail befasst sich mit der Suche nach einem Praktikumsplatz im Bereich Maschinenbau und fragt nach einer Liste von Firmen, die regelmäßig Praktikanten nehmen. Diese Frage ist ein typisches Beispiel für eine internationale Praktika-Anfrage.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Die E-Mail ist eine allgemeine Anfrage, in der Michael Brandt nach Hilfe sucht, aber keine klare Frage oder Anliege hat. Es gibt keine explizite Einreichung eines Vertrags, keine internationale Frage oder Anfrage zur Verschiebung eines Praktikumsbeginns. Daher passt sie nicht in eine der anderen Kategorien."
+    },
+    {
+      "email_id": "email_055",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "Basierend auf den bereitgestellten Kriterien und dem Inhalt der E-Mail würde ich sie folgendermaßen kategorisieren:\n\nCategory: international_office_question\nReasoning: Die E-Mail enthält explizite Erwähnung von \"Ausland\", \"international\" sowie spezifische Themen wie Visa, Anerkennung und Versicherung im Ausland. Es gibt keine Hinweise auf Inlandspraktika bei internationalen Firmen oder generelle Praktikumsfragen ohne Auslandsbezug. Die Anfrage um eine Vertragskorrektur ist für diese Kategorie nicht relevant.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Diese E-Mail ähnelt den Beispielen 7-10, da sie eine allgemeine Danksagung ohne konkrete Anfrage oder spezifisches Thema enthält. Es gibt keine explizite Frage oder Anliegen, die auf ein bestimmtes Konto zu bringen wären."
+    },
+    {
+      "email_id": "email_056",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "internship_postponement",
+      "expected_category": "international_office_question",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Hier ist die E-Mail in ihrer Hauptkategorisierung:\n\n**Category:** international_office_question\n**Reasoning:** Die E-Mail befasst sich mit einem Praktikumsangebot im Ausland (USA) und erfordert Informationen zu einem Learning Agreement. Es wird ein J-1 Visum beantragt, was auf einen Auslandspraktika hinweist. Der Absender fragt nach der Zuständigkeit des International Offices und dem erforderlichen Formular für USA-Praktika.",
+      "prompt_b_raw_response": "Category: internship_postponement\nReasoning: Diese E-Mail ähnelt den Beispielen 5 und 6, da sie eine explizite Anfrage zur Verschiebung des Praktikumsmitglieds (in diesem Fall der Universität) mit einem konkreten Grund (J-1 Visum beantragen muss) enthält."
+    },
+    {
+      "email_id": "email_057",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "Ich würde die E-Mail in die Kategorie \"uncategorized\" einordnen.\n\nDie Botschaft enthält mehrere Themen, wie Fragen zu Praktikumsgebühren, Anfragen an das Studierendensekretariat und allgemeine Informationen über den Zahlungsweg. Es gibt keine explizite Erwähnung von \"Vertrag einreichen\", es werden keine internationalen oder nationalen Office-Bezüge aufgeworfen und es gibt keinen Hinweis darauf, dass eine Verschiebung oder Unterbrechung des Praktikums gewünscht ist.\n\nEs ist auch nicht klar, ob die Frage nur nach einer allgemeinen Anleitung zum Bezahlen der Praktikumsgebühren gesucht wird oder ob es spezifische Informationen über den Zahlungsweg gibt. Die E-Mail enthält keine explizite Anfrage zu Praktikumsverträgen, daher passt sie nicht in die Kategorie \"contract_submission\".\n\nDie E-Mail enthält keine Fragen zu internationalen oder inlandsen Office-Bezügen, also passt sie auch nicht in die Kategorien \"international_office_question\" bzw. \"internship_postponement\".\n\nInsgesamt ist es am sichersten, die E-Mail in die Kategorie \"uncategorized\" einzustufen, da es mehrere Themen vermischt und keine klaren Fokus-Themen aufweist.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Diese E-Mail ähnelt den Beispielen 7-10, da sie eine allgemeine Frage ohne spezifisches Thema ist. Es gibt keine explizite Anfrage nach einem bestimmten Dokument oder Informationen zu einem konkreten Thema wie Praktikumsvertrag, Auslandspraktikum oder Internschaft."
+    },
+    {
+      "email_id": "email_059",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "Die E-Mail kann folgendermaßen kategorisiert werden:\n\n**Category:** contract_submission\n**Reasoning:** Die E-Mail handelt von einem Fehler beim Hochladen des Vertragsexemplars in das Portal und fragt nach einer Möglichkeit, den Vertrag einzureichen. Dies erfüllt die Kriterien für die Kategorie \"contract_submission\", da es sich um eine Einreichung/Korrektur eines Praktikumsvertrags handelt.",
+      "prompt_b_raw_response": "Hier ist die Kategorisierung der E-Mail:\n\nCategory: uncategorized\nReasoning: Die E-Mail handelt von einem technischen Problem mit dem Hochladen eines PDF-Dateis, aber es gibt keine klare Anfrage zur Verschiebung oder zur Einreichung eines Vertrags. Es gibt auch keine spezifischen Fragen zu Auslandspraktikums oder Praktikumsvorschriften. Die E-Mail ist also eine allgemeine organisatorische Frage ohne eindeutigen Kontext, was sie in die Kategorie \"uncategorized\" bringt."
+    },
+    {
+      "email_id": "email_060",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "internship_postponement",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Ich habe die E-Mail analysiert und gefunden, dass sie nicht eindeutig einer der drei Hauptkategorien zugeordnet werden kann. Die E-Mail enthält Fragen zu Praktikumsverträgen, aber es gibt auch eine Anfrage zur Verlängerung des Praktikums, was mehrere Themen vermischt.\n\nDie E-Mail erfüllt nicht alle Kriterien einer bestimmten Kategorie, da sie:\n\n* Keine explizite Erwähnung von \"Vertrag einreichen/eingereicht\" macht ( NICHT contract_submission)\n* Kein Thema wie Visa, Anerkennung oder Learning Agreements behandelt ( NICHT international_office_question)\n* Keine explizite Begriffe wie \"verschieben\", \"pausieren\" oder \"unterbrechen\" verwendet wird ( NICHT internship_postponement)\n\nEs gibt keine Hinweise darauf, dass es sich um eine allgemeine Informationsanfrage, eine organisatorische Frage oder eine Danksagung handelt.\n\nDa die E-Mail mehrere Themen vermischt und die Absicht unklar ist, würde ich sie in die Kategorie \"uncategorized\" einordnen.\n\nCategory: uncategorized\nReasoning: Die E-Mail enthält mehrere Themen, die nicht eindeutig einer der drei Hauptkategorien zugeordnet werden können.",
+      "prompt_b_raw_response": "Ich werde die E-Mail \"Verlängerung Praktikum\" anhand der obigen Beispiele kategorisieren.\n\nE-Mail Details:\nBetreff: Verlängerung Praktikum\nVon: felix.wagner@htwg-konstanz.de\nHat Anhang: False\n\nText:\nHallo zusammen,\n\nmein Praktikum bei SAP läuft noch bis Ende des Monats. Jetzt hat mir die Firma angeboten, das Praktikum um 2 Monate zu verlängern.\n\nWie sieht das aus mit der Anerkennung? Muss ich da was beachten oder neu anmelden?\n\nGruß\nFelix\n\nCategory: internship_postponement\nReasoning: Die E-Mail ähnelt Beispiel 5 (internship_postponement) insofern, dass sie eine explizite Anfrage um die Verlängerung des Praktikums mit einem konkreten Grund enthält. Es ist jedoch nicht so spezifisch wie ein Beispiel für \"Praktikum pausieren wegen Prüfungsphase\", da es keine Erkrankung erwähnt wird, sondern eher eine Verlängerung aufgrund einer Firmeninitiative.\n\nRechtfertigung: Die E-Mail bezieht sich direkt auf das Praktikum und fragt nach der Anerkennung einer Verlängerung. Dies ähnelt mehr an einem Beispiel für eine Verlängerungsanfrage als bei einer einfachen Frage oder Anfrage ohne konkreten Grund."
+    },
+    {
+      "email_id": "email_064",
+      "prompt_a_prediction": "internship_postponement",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "internship_postponement",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Category: internship_postponement\nReasoning: Die E-Mail enthält eine Anfrage zur Verschiebung des Praktikums, da es explizit um das \"verschieben\" des Beginns geht und Max den Grund für die Verschiebung als \"großes Projekt\" nennt.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Die E-Mail beinhaltet keine explizite Frage oder Anfrage, sondern vielmehr eine kurze Nachricht über eine Änderung in einem geplanten Praktikumsbeginn. Es gibt keine klare Zuordnung zu den anderen Kategorien und es fehlt die spezifische Angabe eines Projekts, einer Firma oder eines Landes, was sie von den Beispielen 10 auszeichnet."
+    },
+    {
+      "email_id": "email_065",
+      "prompt_a_prediction": "uncategorized",
+      "prompt_b_prediction": "contract_submission",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Die E-Mail hat mehrere Themen vermisst, ohne klaren Fokus. Es handelt sich um eine Anfrage zum Praktikumsplatz und Fragen zu Kontakten zu Unternehmen, aber es gibt auch allgemeine Informationen über den Suchprozess und die möglichen Gründe für Absagen.\n\nAngesichts der Tatsache, dass die E-Mail mehrere Themen vermisst und ohne klaren Fokus ist, kann sie nicht eindeutig einer der drei Hauptkategorien zugeordnet werden. Daher wird sie in die Kategorie \"uncategorized\" eingekategorisiert.\n\nCategory: uncategorized\nReasoning: Die E-Mail enthält mehrere Themen und keine klare Hauptsache, was eine Zuordnung in eine der drei Hauptkategorien unmöglich macht.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Diese E-Mail ähnelt den Beispielen 7-10, da sie keine explizite Anfrage an ein bestimmtes Thema stellt, sondern eine allgemeine Frage nach Kontakten zu Unternehmen im Bereich Maschinenbau und Praktikumsmöglichkeiten. Es gibt keine klare Zuordnung in die Kategorien contract_submission, international_office_question oder internship_postponement."
+    },
+    {
+      "email_id": "email_067",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "contract_submission",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Category: international_office_question\nReasoning: Die E-Mail erwähnt \"Ausland\" und \"international\", was darauf hindeutet, dass es sich um eine Frage zu Auslandspraktika handelt. Der Absender dankt Frau Meier für die Bearbeitung eines Praktikumsvertrags, was ebenfalls auf ein Auslandspraktikum hinweist. Die E-Mail enthält keine Informationen über Inlandspraktika oder generelle Praktikumsfragen ohne Auslandsbezug.",
+      "prompt_b_raw_response": "Category: uncategorized\n Reasoning: Die E-Mail ist eine allgemeine Danksagung ohne spezifisches Anliegen oder Thema, die nicht zum gleichen Kategorien wie \"contract_submission\", \"international_office_question\" oder \"internship_postponement\" passt. Es ist auch keine allgemeine organisatorische Frage wie im Beispiel 7, sondern eher eine persönliche Nachricht mit positiver Wirkung."
+    },
+    {
+      "email_id": "email_068",
+      "prompt_a_prediction": "internship_postponement",
+      "prompt_b_prediction": "international_office_question",
+      "expected_category": "contract_submission",
+      "prompt_a_correct": false,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "**Kategorisierung der E-Mail**\n\nDie E-Mail entspricht den Kriterien für die Kategorie **internship_postponement**.\n\n**Category: internship_postponement**\n**Reasoning:** Die E-Mail enthält eine explizite Anfrage zur Verschiebung des Praktikums (mit dem Zeitraum 01.07.2025 bis 31.12.2025) und fragt nach möglichen Gebühren für die Praktikumsanmeldung. Der Absender erwähnt auch, dass ein Freund von einem Bearbeitungsgebühr sprach. Die Anfrage ist somit eindeutig an eine Verschiebung oder Unterbrechung des Praktikums gebunden.\n\n**Details zur E-Mail:**\n\n* Betreff: Praktikumsvertrag Porsche AG - Prüfung + Frage Gebühren\n* Von: david.koch@htwg-konstanz.de\n* Hat Anhang: True (beigefügter Dokumenten, der ein Praktikumsvertrag enthält)\n* Text: Die E-Mail ist eine offene Anfrage mit einem klaren Fokus auf die Verschiebung des Praktikums und einer Frage nach möglichen Gebühren.",
+      "prompt_b_raw_response": "Category: internship_postponement\nReasoning: Dieser E-Mail ähnelt Beispielen 5 bzw. 6, da sie eine explizite Anfrage zur Verschiebung des Praktikumsbeginns (als Grund ist keine Erkrankung genannt) und einen konkreten Zeitraum für die Verschiebung anbietet. Die E-Mail enthält auch den Anhang, der die Praktikumsanmeldung enthält.\n\nUrsprüngliche Antwort:\nCategory: internship_postponement\nReasoning: Dieser E-Mail ähnelt Beispielen 5 bzw. 6, da sie eine explizite Anfrage zur Verschiebung des Praktikumsbeginns und einen konkreten Zeitraum für die Verschiebung anbietet.\n\nKorrigierte Antwort:\nCategory: internship_postponement\nReasoning: Dieser E-Mail ähnelt Beispielen 5 bzw. 6, da sie eine explizite Anfrage zur Verschiebung des Praktikumsbeginns und einen konkreten Zeitraum für die Verschiebung anbietet.\n\nAnpassung:\nDie E-Mail enthält auch eine Frage zur Gebührenzahlung, was den Untersuchungsrichtlinien widerspricht. Da diese Frage keine explizite Anfrage zur Verschiebung ist, sollte die Kategorie korrigiert werden. \n\nKategorisierung überprüft und geändert: \nCategory: international_office_question\nReasoning: Die E-Mail bezieht sich auf den Praktikumsvertrag und die Gebührenzahlung, was spezifische Fragen zu Auslands- oder Inlandspraktika im Zusammenhang mit der Porsche AG in Deutschland ist."
+    },
+    {
+      "email_id": "email_069",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "Category: contract_submission\nReasoning: Die E-Mail handelt von einem Praktikumsvertrag, der über das Online-Portal hochgeladen werden soll. Sie erwähnt Fehlermeldungen und fragt nach einer alternativen Lösung (per Email schicken), um den Vertrag zu bestätigen. Der Anhang ist nicht hochgeladen worden, aber die E-Mail bezieht sich auf ihn.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Die E-Mail bezieht sich auf ein allgemeines Problem mit der Hochladung eines Anhangs, ohne spezifische Informationen oder eine klare Anfrage zu stellen. Es gibt keine explizite Frage zur Verschiebung des Praktikumsbeginns wie in Beispielen 5 und 6, noch keine Frage zu einem bestimmten Thema wie in Beispielen 7 und 9. Die E-Mail ist auch kein Anhang zu senden, was die Kategorie 'uncategorized' weiter unterstreicht."
+    },
+    {
+      "email_id": "email_070",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "international_office_question",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "**Category: contract_submission**\n\n**Reasoning:** Die E-Mail konzentriert sich auf die Anfrage zum Einreichen eines Praktikumsvertrags und beinhaltet explizite Erwähnungen von \"Vertrag einreichen/eingereicht\". Sie fragt nach den Schritten zur Verlängerung des laufenden Praktikums und wie das verlängerte Praktikum mit dem bestehenden Vertrag abgeglichen werden soll.",
+      "prompt_b_raw_response": "Category: international_office_question\nReasoning: Die E-Mail fragt nach einer Verlängerung des Praktikums und erwähnt das Land, in dem sich die Firma befindet (Deutschland), was auf eine Frage zu einem Auslandspraktikum hinweist. Allerdings wird dies von der Firma selbst angeboten, was die Frage nicht direkt nach Informationen oder Unterstützung bei der Organisation des Praktikums fragt. Deshalb passt es besser in die Kategorie international_office_question als in internship_postponement."
+    },
+    {
+      "email_id": "email_072",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "internship_postponement",
+      "expected_category": "international_office_question",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Basis für die Kategorisierung:\n\nDie E-Mail enthält mehrere Themen, aber der Hauptschwerpunkt liegt auf den Fragen zum Auslandspraktikum in Schweden.\n\nHier sind meine Schlussfolgerungen:\n\n**Category: international_office_question**\n**Reasoning:** Die E-Mail enthält explizite Erwähnung von \"Ausland\", \"international\" und spezifische Länder (Schweden). Themen wie Visa, Anerkennung und Versicherung im Ausland werden erwähnt. Die Frage ist auch bezüglich des Learning Agreements und ERASMUS gestellt.\n\nBegründung: Die E-Mail erfüllt alle Kriterien der international office question-Kategorie, insbesondere die Erwähnung von \"Ausland\", das Thema von Visa und Anerkennung sowie die Frage zu Learning Agreements.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Die E-Mail beinhaltet eine Frage zu einem Auslandspraktikum, aber es gibt keine explizite Anfrage zur Einreichung eines Vertrags oder Formulare, wie im Beispiel 3. Es fehlt auch die spezifische Frage nach Zuschüssen, was in Beispiel 4 nicht vorkommt. Die E-Mail ist allgemein formuliert und enthält keine klaren Anforderungen oder Informationen, die sie zu einem anderen Kategorien wie internationale Office-Question oder internship_postponement führen würden."
+    },
+    {
+      "email_id": "email_073",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "contract_submission",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Category: contract_submission\nReasoning: Die E-Mail handelt von einem korrigierten Praktikumsvertrag, der noch ohne Unterschrift bei der Institution eingereicht wurde. Es gibt eine explizite Erwähnung des \"Vertrag einreichen\" und eine Anfrage zur Nachreicherung eines fehlenden Unterzeichners.",
+      "prompt_b_raw_response": "**Kategorie:** uncategorized\n**Grundung:**\nDiese E-Mail ähnelt den Beispielen 7-10, da sie eine allgemeine Frage stellt und keine spezifische Anfrage zur Einreichung eines Vertrags oder zur Verschiebung eines Praktikums enthält. Es fehlt auch ein klarer Grund für die Anfrage.\n\n**Details:**\n\n* E-Mail Details:\n + Betreff: Vertrag nachreichen - fehlende Unterschrift\n + Von: sarah.hoffmann@htwg-konstanz.de\n + Hat Anhang: False\n + Text: ...\n* Gründe für die Kategorie:\n + Keine spezifische Anfrage zur Einreichung eines Vertrags oder zur Verschiebung eines Praktikums.\n + Kein klarer Grund für die Anfrage.\n + Allgemeine Frage, die keine klare Zuordnung in die anderen Kategorien findet."
+    },
+    {
+      "email_id": "email_075",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "Ich würde die E-Mail in die Kategorie \"contract_submission\" einordnen.\n\nGrund dafür ist, dass die E-Mail eine Bestätigung für die Klärung eines Problems mit dem Praktikumsvertrag enthält und den Empfänger auffordert, sich noch einmal zu bedanken. Dies deutet darauf hin, dass es sich um eine Korrektur oder einen Nachtrag zu einem bereits eingereichten Dokument handelt.\n\nDie E-Mail enthält keine explizite Erwähnung von \"Vertrag einreichen/eingereicht\" und gibt keinen Anhang, was nicht typisch für eine solche E-Mail wäre. Dennoch liegt der Kontext nahe an einer Korrektur oder Bestätigung eines bereits eingereichten Dokuments.\n\nEs gibt keine anderen typischen Indikatoren für die anderen Kategorien (internship_postponement, international_office_question) und es ist unwahrscheinlich, dass es sich um eine Anfrage zur Verschiebung/Pausierung/Unterbrechung oder Fragen zu Auslandspraktika handelt.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Die E-Mail ist eine Danksagung ohne konkretes Anliegen oder spezifisches Thema, was sie von den anderen Kategorien unterscheidet. Es gibt keine explizite Anfrage oder Frage, sondern einfach nur eine Dankesnachricht."
+    },
+    {
+      "email_id": "email_076",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "internship_postponement",
+      "expected_category": "contract_submission",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Category: contract_submission\nReasoning: Die E-Mail enthält eine Frage zu den Bedingungen des Praktikumsvertrags, insbesondere zur Dauer, und bezieht sich auf die Notwendigkeit einer Änderung des Vertrages. Der Absender erwähnt auch, dass er den Vertrag direkt einreichen wird, wenn er Bescheid weiß, was auf eine Korrektur oder Änderung des ursprünglichen Vertrags hinweist.",
+      "prompt_b_raw_response": "Category: internship_postponement\nReasoning: Diese E-Mail ähnelt dem Beispiels \"internship_postponement\" BEISPIEL 6, da es sich um eine explizite Anfrage zur Pausierung des Praktikums mit einem konkreten Grund (Prüfungsphase) handelt."
+    },
+    {
+      "email_id": "email_077",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "international_office_question",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Betreff: Praktikum in Singapur - Anerkennung?\n\nVon: lena.zimmermann@htwg-konstanz.de\nHat Anhang: False\n\nText:\nSehr geehrte Damen und Herren,\n\nich habe ein Praktikumsangebot von DHL in Singapur erhalten. Das Praktikum würde 24 Wochen dauern und alle Anforderungen der Prüfungsordnung erfüllen.\n\nWird ein Praktikum in Singapur als Pflichtpraktikum anerkannt? Gibt es besondere Formulare für außereuropäische Länder? Und kann ich mich für ein Stipendium bewerben?\n\nVielen Dank für Ihre Hilfe!\nLena Zimmermann\n\nCategory: international_office_question\nReasoning: Die E-Mail enthält explizite Erwähnung von \"Ausland\" und spezifischen Ländern (Singapur), was auf Fragen zu Auslandspraktika hinweist. Darüber hinaus werden Themen wie Anerkennung und Stipendium diskutiert, die typisch für internationale Praktikumsfragen sind.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Diese E-Mail ähnelt den Beispielen 7-10, da sie eine allgemeine Frage stellt, ohne spezifische Anforderungen oder Anliegen zu haben. Sie fragt nach der Anerkennung des Praktikums und Informationen zu einem Stipendium, ohne jedoch explizite Details zu liefern."
+    },
+    {
+      "email_id": "email_080",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "internship_postponement",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Category: contract_submission\nReasoning: Die E-Mail enthält eine Anfrage zu einer Korrektur eines Praktikumsvertrags, was einem der typischen Indikatoren für die Kategorie \"contract_submission\" entspricht. Es wird auch erwähnt, dass ein Anhang fehlt, was ebenfalls ein typisches Merkmal dieser Kategorie ist.",
+      "prompt_b_raw_response": "Category: internship_postponement\nReasoning: Die E-Mail handelt von einem Problem beim Hochladen eines Praktikumsvertrages, was eine Änderung der Pläne beinhaltet. Der Abgabetermin ist übermorgen, daher ist die Anfrage dringend."
+    },
+    {
+      "email_id": "email_084",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "contract_submission",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "**Kategorisierung der E-Mail**\n\nDie E-Mail \"Betreff: Vertrag nochmal schicken???\" entspricht der Kategorie **contract_submission**, da sie sich explizit mit der Frage befasst, ob ein bereits eingereichter Praktikumsvertrag noch einmal gesendet werden sollte.\n\nGründe für diese Kategorie:\n\n* Die E-Mail erwähnt explizit den Vertrag und fragt nach seiner Zustimmung.\n* Es wird kein Anhang angegeben, was typisch für die Einreichung eines Praktikumsvertrags ist.\n* Die Frage konzentriert sich auf die Zustimmung des Unternehmens (DigitalWorks), was ein typischer Aspekt der Vertragseingabe.\n\nDaher muss die E-Mail nicht alle anderen Kriterien erfüllen, um in eine andere Kategorie eingestuft zu werden.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Die E-Mail ist eine allgemeine Frage, in der Tim Hoffmann nach Bestätigung des Eingehens eines Vertragsfragments fragt. Es gibt keine klare Handlung oder Anfrage, die sie zu einer anderen Kategorie bringen würde."
+    },
+    {
+      "email_id": "email_085",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "international_office_question",
+      "prompt_a_correct": true,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Ich habe die E-Mail analysiert und hier meine Entscheidung:\n\nCategory: international_office_question\nReasoning: Die E-Mail enthält explizite Erwähnung von \"Praktikum in Belgien\", was auf ein Auslandspraktikum hinweist. Außerdem wird nach einer Erasmus+ Förderung gefragt und das Anerkennungsverfahren für internationale Praktika erwähnt. Es fehlt jedoch eine explizite Erwähnung von \"Ausland\" oder spezifischen Ländern, aber die Frage ist klar international aufgerichtet.\n\nDa die Kriterien nicht vollständig erfüllt sind (kein explizites Ausland oder spezifischer Landangabe), könnte man argumentieren, dass es in den Bereich \"internationale Office-Question\" passt. Aber die E-Mail enthält auch Nebenfragen wie Fristen und Anerkennungsverfahren, was sie nicht vollständig zu einer anderen Kategorie macht. Daher habe ich mich entschieden, diese Kategorie zu wählen.\n\nAlternativ hätte man argumentieren können, dass die E-Mail mehrere Themen vermisst (wie Anhang oder Organisation), was sie in die Kategorie \"uncategorized\" bringen würde. Aber aufgrund der internationalen Ausrichtung und der Erwähnung von Erasmus+ Förderungen habe ich mich für diese Kategorie entschieden.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Diese E-Mail ähnelt nicht direkt einem der anderen Beispiele, da sie keine explizite Frage oder Anfrage zu einem bestimmten Thema enthält. Sie fragt nach möglichen Förderungen und Anerkennungsverfahren für internationale Praktika, ohne spezifische Details anzugeben. Daher ist eine Zuordnung in eine der anderen Kategorien nicht möglich, und die E-Mail wird als \"uncategorized\" bezeichnet."
+    },
+    {
+      "email_id": "email_088",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "**Category: contract_submission**\n\n**Reasoning:** Die E-Mail enthält eine explizite Anfrage, den Praktikumsvertrag im Online-Portal hochzuladen und eine Fehlermeldung zu melden. Es wird auch ein Zeitdruck erwähnt, da das Praktikum nächste Woche beginnen soll. Der Anhang ist nicht erforderlich, aber die E-Mail enthält den Inhalt des Vertrags.\n\n**Details:**\n\n- Explizite Erwähnung von \"Vertrag einreichen/eingereicht\"\n- Keine spezifischen Details zu beigefügten Dokumenten oder Unterschriften\n- Fragen zur Bestätigung oder Lösung der Probleme mit dem Upload\n\nDie Kategorie \"contract_submission\" passt am besten, da die E-Mail direkt mit der Einreichung des Praktikumsvertrags zu tun hat und die Anfrage um Hilfe bei der Überwindung eines Problems bittet.",
+      "prompt_b_raw_response": "**Kategorie:** uncategorized\n**Grund:** Die E-Mail ist keine klare Frage, Anfrage oder Bestätigung zu einem bestimmten Thema, sondern eine allgemeine Beschwerde über ein Problem mit dem Portal. Sie enthält keine spezifische Frage oder Anliege, die in den Beispielen als \"uncategorized\" klassifiziert werden können. Die E-Mail ähnelt eher Beispielen 7 und 8, aber da es sich hier um eine aktuelle Beschwerde handelt, wird sie der Kategorie \"uncategorized\" zugeordnet.\n\n**Details:**\nCategory: uncategorized\nReasoning: Die E-Mail ist keine klare Frage, Anfrage oder Bestätigung zu einem bestimmten Thema, sondern eine allgemeine Beschwerde über ein Problem mit dem Portal."
+    },
+    {
+      "email_id": "email_089",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "contract_submission",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "Ich habe die E-Mail analysiert und folgende Kategorie gefunden:\n\n**Category: international_office_question**\n\n**Reasoning:** Die E-Mail befasst sich mit einem Praktikumsplatz im Bereich Maschinenbau für das Sommersemester 2025. Der Absender fragt nach Unternehmen, die regelmäßig Praktikanten aufnehmen und bittet um Unterstützung bei der Bewerbung. Obwohl es keine explizite Erwähnung von \"Ausland\" oder \"international\" gibt, liegt der Schwerpunkt des Themas am Auslandspraktikum und die Fragen beziehen sich auf die Verpflichtung zur Übernahme eines Praktikums im Ausland.\n\nEs fehlt hier jedoch ein typisches Indikator wie \"Visa\", \"Anerkennung\" oder \"Learning Agreements\". Trotzdem liegt die HAUPTABSICHT am Thema des Praktikumsplatzes im Ausland und die Fragen beziehen sich auf internationale Firmen.",
+      "prompt_b_raw_response": "Betrifft: Kategorisiere die folgende E-Mail anhand der obigen Beispiele\n\nCategory: uncategorized\nReasoning: Die E-Mail handelt von einem Praktikumsplatz gesucht, einer Liste von Unternehmen zu finden und Unterstützung bei der Bewerbung. Es gibt keine explizite Anfrage nach einem Vertrag oder einer spezifischen Frage zu einem bestimmten Thema wie in den Beispielen 3-6. Die E-Mail enthält auch keine Frage zur Verschiebung eines Praktikumsbeginns (Beispiel 5) oder eine Danksagung ohne konkretes Anliegen (Beispiel 8). Daher passt die E-Mail nicht in die Kategorien contract_submission, international_office_question, internship_postponement oder uncategorized."
+    },
+    {
+      "email_id": "email_090",
+      "prompt_a_prediction": "internship_postponement",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "Category: internship_postponement\nReasoning: Die E-Mail handelt von einer Anfrage zur Verlängerung eines laufenden Praktikums, die explizite Begriffe wie \"verschieben\" und \"verlängern\" enthält. Der Absender fragt nach Möglichkeiten zur Änderung der Laufzeit und erkundet, ob eine neue Vereinbarung erforderlich ist. Diese Merkmale entsprechen den Kriterien für die Kategorie \"internship_postponement\".",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Die E-Mail ähnelt Beispielen 7-10, da sie keine explizite Frage oder Anfrage enthält. Es wird kein bestimmter Vertrag eingereicht oder eine Verschiebung/Verlängerung eines Praktikums angefordert. Stattdessen ist die Frage allgemein und hängt von der spezifischen Situation ab, sodass es keine klare Kategorisierung gibt."
+    },
+    {
+      "email_id": "email_092",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "international_office_question",
+      "prompt_a_correct": false,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "**Kategorisierung der E-Mail**\n\nDie E-Mail passt nicht genau in eine der drei Hauptkategorien, aber auch nicht in die \"uncategorized\"-Kategorie.\n\n**Gründe:**\n- Sie enthält Fragen zu Auslandspraktika (Auslandsbezug).\n- Es gibt spezielle Anforderungen für Schweden.\n- Aber es fehlt eindeutig eine explizite Erwähnung von \"Anmeldung\" oder \"Einreichung\".\n\nDie E-Mail passt also nicht genau in die Kategorien \"contract_submission\", \"international_office_question\" und auch nicht in die \"uncategorized\"-Kategorie. \n\n**Kategorisierung:** \n**uncategorized**\n\n**Gründe:**\n- Die E-Mail enthält mehrere Themen (Praktikumsanmeldung, Auslandsbezug).\n- Die Absicht ist unklar oder mehrdeutig.\n- Es fehlen explizite Hinweise auf eine bestimmte Aktion.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Die E-Mail beinhaltet keine explizite Frage zur Verschiebung oder Pausierung eines Praktikums, noch gibt es Anmerkungen zu Verträgen oder Anerkennung. Sie enthält allgemeine Fragen zum Auslandspraktikum in Schweden ohne klaren Antrag oder spezifische Details."
+    },
+    {
+      "email_id": "email_094",
+      "prompt_a_prediction": "parse_error",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "contract_submission",
+      "prompt_a_correct": false,
+      "prompt_b_correct": false,
+      "prompt_a_raw_response": "**Category:** internships_postponement\n**Reasoning:** Die E-Mail enthält eine explizite Anfrage nach einer Verschiebung/Pausierung/Unterbrechung des Praktikums, was den ersten Kriterien \"verschieben\", \"pausieren\" oder \"unterbrechen\" erfüllt. Es wird auch ein Grund genannt (nachdem Marco seinen Vertrag nicht erhalten hat), was das zweite Kriterium erfüllt.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Die E-Mail ist nicht direkt eine Anfrage zur Verschiebung oder Pausierung eines Praktikums, sie fragt nach Rückmeldung auf eine vorherige Einreichung eines Vertrags und ähnelt den Beispielen 7-10 für 'uncategorized', die allgemeine organisatorische Fragen oder Danksagungen enthalten."
+    },
+    {
+      "email_id": "email_095",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "Basis für die Antwort:\n\n1. Die E-Mail ist keine Anfrage zum Einreichen eines Praktikumsvertrags (contract_submission) da es keine Erwähnung von \"Vertrag einreichen\" gibt.\n2. Die E-Mail ist auch keine Frage zu Auslandspraktika (international_office_question) da es keine Erwähnung von \"Ausland\", \"international\" oder spezifischen Ländern gibt.\n3. Die E-Mail ist keine Anfrage zur Verschiebung/Pausierung/Unterbrechung eines Praktikums (internship_postponement) da es keine explizite Begriffe wie \"verschieben\", \"pausieren\" oder \"unterbrechen\" gibt.\n\nGründe für die Kategorie: uncategorized\n\nDie E-Mail ist eine Danksagung und Bedankung der Empfängerin für die schnelle Bearbeitung der Unterlagen, ohne eindeutig einer der drei Hauptkategorien zugeordnet werden zu können.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Die E-Mail ist eine allgemeine Danksagung ohne konkretes Thema oder Anliegen, was sie von den anderen Beispielen unterscheidet."
+    },
+    {
+      "email_id": "email_096",
+      "prompt_a_prediction": "contract_submission",
+      "prompt_b_prediction": "international_office_question",
+      "expected_category": "international_office_question",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "**Kategorisierung der E-Mail**\n\nDie E-Mail passt nicht eindeutig zu einer der drei Hauptkategorien. Sie enthält mehrere Themen, darunter Praktikumsfragen, Versicherungsfragen und die Anerkennung des Praktikums in Kanada.\n\n**Begründung:**\n\n* Die E-Mail enthält explizite Fragen zu Praktikumsfragen (Praktikum in Kanada für 6 Monate ab September 2025) und die Anerkennung des Praktikums.\n* Sie enthält auch eine Anfrage nach Versicherungen, die für das Praktikum erforderlich sind.\n* Es gibt keine explizite Erwähnung von \"Vertrag einreichen/eingereicht\", die typische Indikatoren für die Kategorie \"contract_submission\" erfüllen nicht.\n\n**Kategorisierung:**\n\nCategory: uncategorized\nReasoning: Die E-Mail enthält mehrere Themen und ist nicht eindeutig einer der drei Hauptkategorien zugeordnet. Es fehlt eine klare Absicht oder ein bestimmtes Thema, das überwiegend ist.",
+      "prompt_b_raw_response": "Category: international_office_question\nReasoning: Die E-Mail beinhaltet spezifische Fragen zu einem Auslandspraktikum in Kanada, einschließlich Versicherungsfragen. Der Landeinsatz ist klar erwähnt, was die E-Mail ebenfalls aus dem Bereich 'international_office_question' herausreißt.\n\nAnderenfalls könnte diese E-Mail als 'internship_postponement' oder 'uncategorized' klassifiziert werden, da sie zwar eine Frage zur Praktikumsversicherung beinhaltet, aber keine explizite Anfrage zur Verschiebung oder Pausierung des Praktikums sowie keine allgemeine Frage ist."
+    },
+    {
+      "email_id": "email_099",
+      "prompt_a_prediction": "international_office_question",
+      "prompt_b_prediction": "uncategorized",
+      "expected_category": "uncategorized",
+      "prompt_a_correct": false,
+      "prompt_b_correct": true,
+      "prompt_a_raw_response": "Ich bin in der Lage, die E-Mail zu kategorisieren. \n\nCategory: international_office_question\nReasoning: Die E-Mail enthält explizite Erwähnung von \"Ausland\" und Fragen zu Visa, Anerkennung und Versicherung im Ausland sowie eine spezifische Länderanfrage (Hamburg oder Umgebung), was auf internationale Praktika hinweist.",
+      "prompt_b_raw_response": "Category: uncategorized\nReasoning: Diese E-Mail ist keine klare Frage oder Anfrage zu einem spezifischen Thema, sondern eine allgemeine Beschwerde über die Suche nach einem Praktikumsplatz. Es gibt keine explizite Anhang oder spezifische Informationen, die in eine andere Kategorie passen würden."
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+Kategorisiere die folgende E-Mail basierend auf diesen Beispielen:
+
+=== BEISPIELE FÜR JEDE KATEGORIE ===
+
+BEISPIEL 1: contract_submission
+Betreff: "Praktikumsvertrag zur Genehmigung"
+Hat Anhang: true
+Text: "Sehr geehrtes Praktikantenamt, hiermit reiche ich meinen unterschriebenen Praktikumsvertrag mit der Firma TechCorp ein. Alle Dokumente sind beigefügt."
+→ Category: contract_submission
+→ Warum: Explizite Einreichung eines Vertrags mit Anhang
+
+BEISPIEL 2: contract_submission
+Betreff: "Korrektur Praktikumsvertrag"
+Hat Anhang: true
+Text: "Hallo, ich habe die Korrekturen am Vertrag vorgenommen. Anbei die überarbeitete Version zur erneuten Prüfung."
+→ Category: contract_submission
+→ Warum: Einreichung einer korrigierten Vertragsversion
+
+BEISPIEL 3: international_office_question
+Betreff: "Frage zu Auslandspraktikum in Spanien"
+Hat Anhang: false
+Text: "Guten Tag, ich plane ein Praktikum in Barcelona. Benötige ich ein Learning Agreement und wie funktioniert die Anerkennung?"
+→ Category: international_office_question
+→ Warum: Frage zu Auslandspraktikum, spezifisches Land erwähnt
+
+BEISPIEL 4: international_office_question
+Betreff: "ERASMUS Praktikum - Versicherung"
+Hat Anhang: false
+Text: "Ich habe eine Frage zur Krankenversicherung für mein Praktikum in Frankreich im Rahmen von ERASMUS."
+→ Category: international_office_question
+→ Warum: Auslandspraktikum-Frage zu Versicherung und ERASMUS
+
+BEISPIEL 5: internship_postponement
+Betreff: "Verschiebung Praktikumsbeginn"
+Hat Anhang: false
+Text: "Sehr geehrte Damen und Herren, aufgrund einer Erkrankung muss ich mein Praktikum um 4 Wochen verschieben. Ist dies möglich?"
+→ Category: internship_postponement
+→ Warum: Explizite Anfrage zur Verschiebung mit Grund
+
+BEISPIEL 6: internship_postponement
+Betreff: "Praktikum pausieren wegen Prüfungsphase"
+Hat Anhang: false
+Text: "Hallo, ich möchte mein laufendes Praktikum für 2 Wochen pausieren, da ich wichtige Prüfungen habe."
+→ Category: internship_postponement
+→ Warum: Anfrage zur Pausierung mit konkretem Grund
+
+BEISPIEL 7: uncategorized
+Betreff: "Allgemeine Frage"
+Hat Anhang: false
+Text: "Hallo, wann haben Sie Sprechstunden? Ich hätte mehrere Fragen zu verschiedenen Themen."
+→ Category: uncategorized
+→ Warum: Allgemeine organisatorische Frage, kein spezifisches Thema
+
+BEISPIEL 8: uncategorized
+Betreff: "Dankeschön"
+Hat Anhang: false
+Text: "Vielen Dank für Ihre schnelle Hilfe bei meiner letzten Anfrage!"
+→ Category: uncategorized
+→ Warum: Danksagung ohne konkretes Anliegen
+
+BEISPIEL 9: uncategorized
+Betreff: "Frage zum Praktikumsvertrag"
+Hat Anhang: false
+Text: "Welche Informationen müssen im Praktikumsvertrag stehen? Ich habe noch keinen Vertrag, möchte mich aber informieren."
+→ Category: uncategorized
+→ Warum: Allgemeine Informationsfrage OHNE Vertragseinreichung
+
+BEISPIEL 10: uncategorized
+Betreff: "Praktikum bei internationaler Firma in Deutschland"
+Hat Anhang: false
+Text: "Ich mache ein Praktikum bei Google Deutschland in München. Muss ich etwas beachten?"
+→ Category: uncategorized
+→ Warum: Inlandspraktikum (trotz internationaler Firma), keine klare Zuordnung
+
+=== AUFGABE ===
+
+Kategorisiere nun die folgende E-Mail anhand der obigen Beispiele:
+
+E-Mail Details:
+Betreff: {subject}
+Von: {sender}
+Hat Anhang: {has_attachment}
+
+Text:
+{body}
+
+Anleitung:
+1. Vergleiche die E-Mail mit den obigen Beispielen
+2. Achte besonders auf Beispiele 7-10 für 'uncategorized'
+3. Wenn die E-Mail keinem der klaren Beispiele ähnelt → wähle 'uncategorized'
+4. Sei konservativ: Im Zweifel lieber 'uncategorized'
+
+Antwortformat:
+Category: <category_name>
+Reasoning: <Welchem Beispiel ähnelt diese E-Mail und warum?>

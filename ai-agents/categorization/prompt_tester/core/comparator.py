@@ -111,6 +111,8 @@ class Comparator:
                         expected_category=res_a.expected_category,
                         prompt_a_correct=res_a.is_correct,
                         prompt_b_correct=res_b.is_correct,
+                        prompt_a_raw_response=res_a.raw_response,
+                        prompt_b_raw_response=res_b.raw_response,
                     )
                 )
 
